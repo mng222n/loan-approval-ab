@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+.wrapper {
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #38424B;
+}
+
+.main {
+    width: 525px;
+    background-color: #4E5C68;
+    padding: 50px 65px;
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, .15);
+            box-shadow: 0 3px 6px rgba(0, 0, 0, .15);
+    border-radius: 3px;
+    color: white;
+    font-family: Roboto;
+    font-weight: 500;
+}
+
+.main .logo {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.main .logo img {
+    max-width: 80%;
+    height: auto;
+    width: 220px;
+}
+
+.btn-login {
+    width: 100%;
+    background-color: #3F51B5;
+    color: #fff;
+    -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+            box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    border: none;
+    padding: 13px 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.btn-login:hover {
+    background-color: #2F41A3;
+    color: #fff;
+}
+
+.main .form-wrapper .form-group {
+    margin-bottom: 30px;
+}
+
+.main .form-wrapper .form-control {
+    padding: 13px 20px;
+    height: 45px;
+    font-weight: 400;
+    font-size: 17px;
+    border-color: #707070;
+}
+
+.main .form-wrapper .form-check-label {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.main .form-wrapper .form-check-input.is-valid~.form-check-label, .main .form-wrapper  .was-validated .form-check-input:valid~.form-check-label {
+    color: unset;
+}
+
+.main .form-wrapper .form-control.is-valid, .main .form-wrapper .was-validated .form-control:valid {
+    border-color: #707070;
+    background: #fff;
+    box-shadow: none;
+}
+
+.main .form-wrapper .form-control.is-invalid, .main .form-wrapper .was-validated .form-control:invalid {
+    border-color: #F44336;
+    background: #fff;
+}
+
+.main .form-wrapper .form-group .invalid-feedback {
+    color: #F44336;
+}
+
+@media screen and (max-width: 524px){
+    .main {
+        width: 100%;
+    }
+}

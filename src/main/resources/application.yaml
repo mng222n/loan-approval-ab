@@ -1,0 +1,39 @@
+spring:
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
+  datasource:
+    url: jdbc:postgresql://${POSTGRES_HOST:localhost}:${POSTGRES_PORT:5432}/${POSTGRES_DB:cs-systems}
+    username: ${POSTGRES_USERNAME:postgres}
+    password: ${POSTGRES_PASSWORD:12345678}
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties.hibernate:
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+      default_schema: public
+security:
+  oauth2:
+    resource:
+      filter-order: 3
+
+crm:
+  oauth:
+    default-client:
+      frontend:
+        client-id: ${FE_CLIENT_ID:cs-systems-admin}
+      backend:
+        client-id: ${BE_CLIENT_ID:BEclientId}
+        client-secret: ${BE_CLIENT_SECRET:BEclientSecret}
+      redirect-uri: ${CRM_REDIRECT_URI:http://localhost:3000/callback}
+    super-admin:
+      username: ${SUPERADMIN_USERNAME:superadmin}
+      password: ${SUPERADMIN_PASSWORD:12345678}
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+server:
+  port: ${PORT:9999}
