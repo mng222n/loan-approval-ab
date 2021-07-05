@@ -1,2 +1,2 @@
-# crm-systems
-the code developed in crm systems to manage the customers in finance services
+ft-systems
+the code developed in ft systems to manage the contacts in finance services
