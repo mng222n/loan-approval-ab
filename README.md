@@ -1,2 +1,2 @@
-ab-systems
-the code developed in ab systems to manage the contacts in communication services
+loan-approval-ab
+this project demonstrates a loan approval business process and web services
